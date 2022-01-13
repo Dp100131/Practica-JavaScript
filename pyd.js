@@ -23,3 +23,14 @@ function calcularPrecioConDescuento(precio, descuento){
 
 }
 
+function cPcD(){
+
+    let precio = document.getElementById("precioProducto").value;
+    let descuento = document.getElementById("descuentoProducto").value;
+
+    let PcD = calcularPrecioConDescuento(precio, descuento); 
+
+    let resultP = document.getElementById("resultP");
+
+    resultP.innerText= "El precio del producto con descuento es: $"+ PcD;
+}

@@ -13,17 +13,22 @@
         <h1>Porcentajes y descuentos</h1>
     </header>
 
-    <form>
+    <section>
+        <form>
 
-        <label>Escribe el precio de tu producto: </label>
-        <input type="number" placeholder="Precio del producto" id="precioProducto"/>
-
-        <label>Escribe el descuento de tu producto: </label>
-        <input type="number" placeholder="Descuento del producto" id="descuentoProducto"/>
-
-        <input type="button" value="Calcular" >
-
-    </form>
+            <label for="precioProducto">Escribe el precio de tu producto: </label>
+            <input type="number" placeholder="Precio del producto" id="precioProducto"/>
+    
+            <label for="descuentoProducto ">Escribe el descuento de tu producto: </label>
+            <input type="number" placeholder="Descuento del producto" id="descuentoProducto"/>
+    
+            <input type="button" value="Calcular" onclick="cPcD()"/>
+    
+            <p id="resultP"></p>
+        </form>
+        
+    </section>
+    
 
 
 </body>
