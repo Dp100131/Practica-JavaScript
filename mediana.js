@@ -25,17 +25,17 @@ function esPar(lista){
 function laMediana(lista){
 
     let mediana;
+    let listasort = lista.sort(function(a, b){return a - b});
+    if (esPar(listasort)){
 
-    if (esPar(lista)){
-
-        let elemento1 = lista[mitad1];
-        let elemento2 = lista[mitad1-1];
+        let elemento1 = listasort[mitad1];
+        let elemento2 = listasort[mitad1-1];
     
         mediana = (elemento1+elemento2)/2
     
     }else{
     
-        mediana = lista[parseInt(mitad1)];
+        mediana = listasort[parseInt(mitad1)];
     
     }
 
